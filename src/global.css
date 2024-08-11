@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap");
+
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-Light.otf");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-Regular.otf");
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-Medium.otf");
+	font-weight: 500;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-SemiBold.otf");
+	font-weight: 600;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-Bold 700.otf");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-ExtraBold.otf");
+	font-weight: 800;
+	font-style: normal;
+}
+@font-face {
+	font-family: "Trap Grotesk";
+	src: url("/fonts/Trap-Black.otf");
+	font-weight: 900;
+	font-style: normal;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+select.placeholder-option option[value=""][disabled] {
+	color: #b3b3b3;
+}
+
+#custom-checkbox:checked + div svg {
+	display: block;
+}
+
+.container-wrapper {
+	max-width: 1440px;
+	/* position: relative; */
+}
+
+h1,
+h2,
+h3,
+h4,
+button,
+button a {
+	font-family: "Trap Grotesk", sans-serif;
+}
+p,
+label,
+a,
+span,
+h5 {
+	font-family: "Inter", sans-serif;
+	font-size: 14px;
+}
+.carousel-container {
+	width: 80%;
+	height: calc(100% - 60px);
+	margin: 30px 40px;
+	border-radius: 10px;
+	overflow: hidden;
+	position: relative;
+}
+.chat-history {
+	position: sticky !important;
+}
+
+.carousel-container .img-container {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.carousel-container img {
+	width: 100%;
+	height: 100%;
+	display: block;
+	object-fit: cover;
+	/* border-radius: 10px; */
+}
+
+.carousel-container .slick-dots {
+	display: flex !important;
+	justify-content: center;
+	padding: 0;
+	position: absolute;
+	bottom: 50px;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	width: 60%;
+	margin: 0 auto;
+}
+
+.carousel-container .slick-dots li {
+	width: 100px;
+	margin: 0 5px;
+	list-style: none;
+}
+
+.carousel-container .slick-dots li button {
+	display: none;
+}
+
+.carousel-container .slick-dots li:before {
+	content: "";
+	display: block;
+	width: 100%;
+	height: 2px;
+	background: #ffffff3d;
+	border-radius: 2px;
+	position: relative;
+}
+
+.carousel-container .slick-dots li.slick-active:before {
+	background: #fff;
+}
+
+.course-carousel {
+	/* min-width:1200px; */
+	/* display: flex;
+	gap:20px; */
+}
+.course-carousel .slick-slider {
+	min-width: 100%;
+	flex-wrap: nowrap !important;
+	flex: 1;
+	/* margin: 0 auto; */
+	/* overflow: hidden !important;  */
+	max-width: 1000px !important;
+}
+.course-carousel .slick-track {
+	/* display: flex; */
+	/* justify-content: space-between; */
+	/* gap:12px; */
+}
+
+.course-carousel .slick-slide {
+	width: 280px !important;
+	margin: 0 5px;
+}
+
+/* Loader.css */
+.loader {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: fixed;
+	width: 100%;
+	background: rgba(249, 249, 249, 0.654);
+	backdrop-filter: blur(3px);
+	top: 0;
+	left: 0;
+	z-index: 1000;
+}
+
+.spinner {
+	border: 4px solid rgba(0, 0, 0, 0.1);
+	border-left-color: #4356ff;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+	to {
+		transform: rotate(360deg);
+	}
+}
