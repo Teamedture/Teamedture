@@ -23,12 +23,13 @@ export const SecondaryButton = ({
 	onClick,
 	disabled,
 	icon,
+	hoverClass = "hover:bg-secondaryHoverBlue",
 }) => {
 	return (
 		<div>
 			<button
 				onClick={onClick}
-				className={`rounded-lg text-base bg-transparent border border-bg-primaryBlue text-primaryBlue p-2 md:py-3 md:px-6 hover:bg-secondaryHoverBlue cursor-pointer transition-all ease-in font-trap-grotesk font-medium tracking-tight ${className}`}
+				className={`rounded-lg text-base bg-transparent border border-bg-primaryBlue text-primaryBlue p-2 md:py-3 md:px-6 ${hoverClass} cursor-pointer transition-all ease-in font-trap-grotesk font-medium tracking-tight ${className}`}
 			>
 				{icon && <img src={icon} className="w-5" />}
 				{text}
